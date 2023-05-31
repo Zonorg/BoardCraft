@@ -1,5 +1,8 @@
 .navbar {
-  background-color: #822ef5;
+  background-color: #822ef5 !important;
+}
+
+.container-fluid {
   color: white;
 }
 
@@ -21,4 +24,9 @@
 
 .nav-link {
   color: #e6e6e6;
+}
+
+.offcanvas{
+  background-color: #822ef5;
+  width: 80% !important;
 }

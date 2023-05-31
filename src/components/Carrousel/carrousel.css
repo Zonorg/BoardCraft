@@ -1,0 +1,11 @@
+.carousel-container {
+  margin: 20px 5px;
+  border-radius: 5px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: brightness(0.3); 
+}
+
+

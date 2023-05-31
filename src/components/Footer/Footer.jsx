@@ -4,12 +4,20 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <div className="footer">
+      <div className="contacto">
+        <ul className="data" id="contacto">
+          <li>
+            Teléfono
+            <p>+54-9-260-435-0220</p>
+          </li>
+          <li>
+            Email
+            <p>gabrielrosa@gmail.com</p>
+          </li>
+        </ul>
+      </div>
       <div className="footer-content">
-        <p>
-          Copyright © {new Date().getFullYear()} BoardCraft. All rights
-          reserved.
-        </p>
         <ul className="footer-social">
           <li>
             <Link
@@ -39,8 +47,12 @@ function Footer() {
             </Link>
           </li>
         </ul>
+        <p>
+          Copyright © {new Date().getFullYear()} BoardCraft. All rights
+          reserved.
+        </p>
       </div>
-    </footer>
+    </div>
   );
 }
 

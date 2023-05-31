@@ -1,13 +1,15 @@
-.footer {
-  background-color: var(--white-color);
-  padding: 20px;
-  text-align: center;
-  margin-top: auto;
+.data li {
+  list-style: none;
 }
+
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+hr {
+  border: 1px solid black;
 }
 
 .footer-content p {
@@ -25,6 +27,7 @@
 
 .footer-social li {
   margin: 0 10px;
+  text-transform: uppercase;
 }
 
 .footer-social a {

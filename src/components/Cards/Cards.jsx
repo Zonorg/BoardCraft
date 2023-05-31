@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./cards.css";
 import BoardCraft from "./boardcraft.json";
+import { MdGroups, MdPerson, MdTimer } from "react-icons/md";
 
 const Cards = () => {
   const [flippedCards, setFlippedCards] = useState([]);
@@ -13,63 +15,57 @@ const Cards = () => {
     }
   };
 
+  const handleMouseLeave = (index) => {
+    setFlippedCards(flippedCards.filter((cardIndex) => cardIndex !== index));
+  };
+
   return (
-    <div className="cards">
-      {BoardCraft.map((game, index) => {
-        const isFlipped = flippedCards.includes(index);
-        return (
-          <div
-            className={`card ${isFlipped ? "flipped" : ""}`}
-            key={index}
-            onClick={() => handleClick(index)}
-          >
-            <div className="card-inner">
-              <div className="card-front">
-                <h5 className="card-title">{game.name}</h5>
-                <img src={game.img} alt="game" />
-              </div>
-              <div className="card-back">
-                <h5 className="card-title">{game.name}</h5>
-                <p className="card-description">{game.description}</p>
-                <div className="card-details">
-                  <div>
-                    <h6>Min Players:</h6>
-                    <p>{game.min_players}</p>
-                  </div>
-                  <div>
-                    <h6>Max Players:</h6>
-                    <p>{game.max_players}</p>
-                  </div>
-                  <div>
-                    <h6>Min Age:</h6>
-                    <p>{game.min_age} years</p>
-                  </div>
-                  <div>
-                    <h6>Min Playtime:</h6>
-                    <p>{game.min_playtime} min</p>
-                  </div>
-                  <div>
-                    <h6>Max Playtime:</h6>
-                    <p>{game.max_playtime} min</p>
-                  </div>
-                  <div>
-                    <h6>Price:</h6>
-                    <p>${game.price.toLocaleString().replace(",", ".")}</p>
-                  </div>
+    <div id="catalogo">
+      <h2>Catálogo</h2>
+      <div className="cards">
+        {BoardCraft.map((game, index) => {
+          const isFlipped = flippedCards.includes(index);
+          return (
+            <div
+              className={`card ${isFlipped ? "flipped" : ""}`}
+              key={index}
+              onClick={() => handleClick(index)}
+              onMouseLeave={() => handleMouseLeave(index)}
+            >
+              <div className="card-inner">
+                <div className="card-front">
+                  <h5 className="card-title">{game.name}</h5>
+                  <img src={game.img} alt="game" />
+                  <p>${game.price.toLocaleString().replace(",", ".")}</p>
                 </div>
-                <div className="card-links">
-                  <a href="#" className="card-link">
-                    View
-                  </a>
-                  <a href="#" className="card-link">
-                    Edit
-                  </a>
+                <div className="card-back">
+                  <div className="card-details">
+                    <div>
+                      <MdGroups size={30} />
+                      <p>
+                        {game.min_players} - {game.max_players}
+                      </p>
+                    </div>
+                    <div>
+                      <MdPerson size={30} />
+                      <p>+ {game.min_age}</p>
+                    </div>
+                    <div>
+                      <MdTimer size={30} />
+                      <p>{game.max_playtime} min</p>
+                    </div>
+                    <div>
+                      <Link to="/Comprar" className="button-detail">
+                        VER MÁS
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 };
