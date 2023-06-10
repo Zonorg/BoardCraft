@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "catan",
     "name": "Catan",
     "description": "A game of building and trading",
     "img": "https://res.cloudinary.com/dk1bxaazz/image/upload/v1685382078/Boardcraft/Catan_f9neuk.png",
@@ -12,7 +12,7 @@
     "price": 8000
   },
   {
-    "id": 2,
+    "id": "catan-expansion",
     "name": "Catan expansion",
     "description": "A game of building and trading",
     "img": "https://res.cloudinary.com/dk1bxaazz/image/upload/v1685455241/Boardcraft/catan-expansion-removebg-preview_ui7aik.png",
@@ -24,7 +24,7 @@
     "price": 6000
   },
   {
-    "id": 3,
+    "id": "catan-navegantes",
     "name": "Catan navegantes",
     "description": "A game of building and trading",
     "img": "https://res.cloudinary.com/dk1bxaazz/image/upload/v1685382370/Boardcraft/catan-navegantes_ceshzj.png",
@@ -36,7 +36,7 @@
     "price": 8000
   },
   {
-    "id": 4,
+    "id": "catan-navegantes-expansion",
     "name": "Catan navegantes expansion",
     "description": "A game of building and trading",
     "img": "https://res.cloudinary.com/dk1bxaazz/image/upload/v1685455321/Boardcraft/catan-navegantes-plus-removebg-preview_fwyfqg.png",
@@ -48,7 +48,7 @@
     "price": 6000
   },
   {
-    "id": 5,
+    "id": "carcassone",
     "name": "Carcassonne",
     "description": "A game of building and trading",
     "img": "https://res.cloudinary.com/dk1bxaazz/image/upload/v1685382492/Boardcraft/carcassonne_rrennt.png",
@@ -60,7 +60,7 @@
     "price": 6000
   },
   {
-    "id": 6,
+    "id": "carcassone-posadas-y-catedrales",
     "name": "Carcassonne posadas y catedrales",
     "description": "A game of building and trading",
     "img": "https://res.cloudinary.com/dk1bxaazz/image/upload/v1685382612/Boardcraft/carcassonne-posadas-catedrales_niobnu.png",
@@ -72,7 +72,7 @@
     "price": 3000
   },
   {
-    "id": 7,
+    "id": "carcassone-la-princesa-y-el-dragon",
     "name": "Carcassonne La princesa y el Dragon",
     "description": "A game of building and trading",
     "img": "https://res.cloudinary.com/dk1bxaazz/image/upload/v1685390045/Boardcraft/carcassonne-la-princesa-y-el-dragon_ldsxcm.png",
@@ -84,7 +84,7 @@
     "price": 2000
   },
   {
-    "id": 8,
+    "id": "carcassone-la-abadia-y-el-alcalde",
     "name": "Carcassonne La Abadía y el Alcalde",
     "description": "A game of building and trading",
     "img": "https://res.cloudinary.com/dk1bxaazz/image/upload/v1685396415/Boardcraft/carcassone_la_abadia_alcalde_rvvp02.png",
@@ -96,7 +96,7 @@
     "price": 4000
   },
   {
-    "id": 9,
+    "id": "carcassone-la-torre",
     "name": "Carcassonne La Torre",
     "description": "A game of building and trading",
     "img": "https://res.cloudinary.com/dk1bxaazz/image/upload/v1685398127/Boardcraft/carcassonne-torre_l560f3.png",
@@ -108,7 +108,7 @@
     "price": 4000
   },
   {
-    "id": 10,
+    "id": "carcassone-mercados-y-puentes",
     "name": "Carcassonne Mercados y puentes",
     "description": "A game of building and trading",
     "img": "https://res.cloudinary.com/dk1bxaazz/image/upload/v1685398936/Boardcraft/carcassonne-expansion-mercados-y-puentes-removebg-preview_sxnioi.png",
@@ -120,7 +120,7 @@
     "price": 4000
   },
   {
-    "id": 11,
+    "id": "bunny-kingdom",
     "name": "Bunny Kingdom",
     "description": "A game of building and trading",
     "img": "https://res.cloudinary.com/dk1bxaazz/image/upload/v1685410767/Boardcraft/bunny-kingdom_nem6wo.png",
@@ -132,7 +132,7 @@
     "price": 10000
   },
   {
-    "id": 12,
+    "id": "bunny-kingdom-in-the-sky",
     "name": "Bunny Kingdom: In the Sky",
     "description": "A game of building and trading",
     "img": "https://res.cloudinary.com/dk1bxaazz/image/upload/v1685454366/Boardcraft/bunny-kingdom-sky_x4jqu7.png",
@@ -144,7 +144,7 @@
     "price": 8000
   },
   {
-    "id": 13,
+    "id": "raids",
     "name": "Raids",
     "description": "A game of building and trading",
     "img": "https://res.cloudinary.com/dk1bxaazz/image/upload/v1685455151/Boardcraft/raids_ipyynm.png",
@@ -156,7 +156,7 @@
     "price": 8000
   },
   {
-    "id": 14,
+    "id": "cyclades",
     "name": "Cyclades",
     "description": "A game of building and trading",
     "img": "https://res.cloudinary.com/dk1bxaazz/image/upload/v1685455694/Boardcraft/cyclades-removebg-preview_bkfhz9.png",
@@ -168,7 +168,7 @@
     "price": 8000
   },
   {
-    "id": 15,
+    "id": "game-of-thrones",
     "name": "Game of Thrones: juego de tablero",
     "description": "A game of building and trading",
     "img": "https://res.cloudinary.com/dk1bxaazz/image/upload/v1685455809/Boardcraft/game-of-thrones-removebg-preview_ep6hmv.png",
@@ -180,7 +180,7 @@
     "price": 12000
   },
   {
-    "id": 16,
+    "id": "the-island",
     "name": "The Island",
     "description": "A game of building and trading",
     "img": "https://res.cloudinary.com/dk1bxaazz/image/upload/v1685455933/Boardcraft/the-island-removebg-preview_zknw3o.png",
@@ -192,7 +192,7 @@
     "price": 8000
   },
   {
-    "id": 17,
+    "id": "the-island-expansion",
     "name": "The island Expansion",
     "description": "A game of building and trading",
     "img": "https://res.cloudinary.com/dk1bxaazz/image/upload/v1685455993/Boardcraft/island-expansion_hayh4g.jpg",
@@ -204,7 +204,7 @@
     "price": 3000
   },
   {
-    "id": 18,
+    "id": "betrayal-at-the-house-of-the-hill",
     "name": "Betrayal at the house of the hill",
     "description": "A game of building and trading",
     "img": "https://res.cloudinary.com/dk1bxaazz/image/upload/v1685456046/Boardcraft/betrayal-removebg-preview_xcu4xs.png",

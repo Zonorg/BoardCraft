@@ -18,8 +18,8 @@ function Carrousel() {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-25 mx-auto"
-            src="https://res.cloudinary.com/dk1bxaazz/image/upload/v1685382370/Boardcraft/catan-navegantes_ceshzj.png"
+            className="d-block w-50 mx-auto"
+            src="https://res.cloudinary.com/dk1bxaazz/image/upload/v1685382078/Boardcraft/Catan_f9neuk.png"
             alt="Second slide"
           />
 

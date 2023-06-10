@@ -1,5 +1,8 @@
 .navbar {
   background-color: #822ef5 !important;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 
 .container-fluid {
@@ -26,7 +29,7 @@
   color: #e6e6e6;
 }
 
-.offcanvas{
+.offcanvas {
   background-color: #822ef5;
   width: 80% !important;
 }
