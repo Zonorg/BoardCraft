@@ -1,22 +1,35 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import "./detail.css";
 import Boardcraft from "../../../boardcraft.json";
+import "./detail.css";
 
 const Detail = () => {
   const { id } = useParams();
 
   const selectedGame = Boardcraft.find((game) => game.id === id);
 
+  const handleWhatsAppClick = () => {
+    const message = `Hola, quiero realizar un pedido del juego: ${selectedGame.name}. ¿Podrían proporcionarme más información?`;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappLink = `https://api.whatsapp.com/send?phone=542604676270&text=${encodedMessage}`;
+    window.open(whatsappLink, "_blank");
+  };
+
   return (
-    <div className="detail">
-      <Link to="/">Volver</Link>
+    <div className="detail-container">
+      <Link to="/" className="detail-link">
+        Volver
+      </Link>
       {selectedGame ? (
         <div>
-          <h2>{selectedGame.name}</h2>
+          <h2 className="detail-title">{selectedGame.name}</h2>
           <p>{selectedGame.description}</p>
-          <img src={selectedGame.img} alt={selectedGame.name} />
-          <p>Precio: ${selectedGame.price}</p>
+          <img
+            src={selectedGame.img}
+            alt={selectedGame.name}
+            className="detail-image"
+          />
+          <p className="detail-price">Precio: ${selectedGame.price}</p>
           <p>
             Jugadores: {selectedGame.min_players} - {selectedGame.max_players}
           </p>
@@ -25,6 +38,12 @@ const Detail = () => {
             {selectedGame.max_playtime} minutos
           </p>
           <p>Edad mínima: {selectedGame.min_age}+</p>
+          <button
+            onClick={handleWhatsAppClick}
+            className="detail-whatsapp-button"
+          >
+            Realizar pedido por WhatsApp
+          </button>
         </div>
       ) : (
         <p>¡Vaya, parece que no tenemos este juego!</p>
