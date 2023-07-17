@@ -1,16 +1,18 @@
 .detail-container {
+  display: flex;
+  flex-direction: column;
   margin: 80px 20px 20px 20px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #fff;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .detail-link {
+  position: absolute;
   text-decoration: none;
   color: blue;
+  font-size: 12px;
   margin-bottom: 10px;
   display: block;
 }
@@ -18,6 +20,11 @@
 .detail-title {
   font-size: 24px;
   margin-bottom: 10px;
+}
+
+.detail-description {
+  margin: 20px 20px;
+  color: #555;
 }
 
 .detail-image {
@@ -47,6 +54,7 @@
 }
 
 .detail-price {
+  margin: 10px 0;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -59,4 +67,10 @@
   padding: 10px;
   border-radius: 5px;
   display: inline-block;
+}
+
+@media screen and (max-width: 480px) {
+  .detail-image {
+    width: 200px;
+  }
 }

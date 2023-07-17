@@ -14,7 +14,7 @@ function NavBar() {
       {["md"].map((expand) => (
         <Navbar key={expand} bg="light" expand={expand} className="navbar">
           <Container fluid>
-            <Navbar.Brand href="#">BoardCraft</Navbar.Brand>
+            <Navbar.Brand href="/">BoardCraft</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -28,7 +28,7 @@ function NavBar() {
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="/">Inicio</Nav.Link>
                   <Nav.Link href="#contacto">Contacto</Nav.Link>
-                  <Nav.Link href="#catalogo">Catálogo</Nav.Link>
+                  <Nav.Link href="/#catalogo">Catálogo</Nav.Link>
                   <NavDropdown
                     title="Dropdown"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}

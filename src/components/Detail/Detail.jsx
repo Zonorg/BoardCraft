@@ -35,14 +35,10 @@ const Detail = () => {
         Volver
       </Link>
       {selectedGame ? (
-        <div>
+        <div className="detail">
           <h2 className="detail-title">{selectedGame.name}</h2>
-          <p>{selectedGame.description}</p>
-          <img
-            src={selectedImage}
-            alt={selectedGame.name}
-            className="detail-image"
-          />
+            <p className="detail-description">{selectedGame.description}</p>
+          <img src={selectedImage} alt={selectedGame.name} className="detail-image" />
           <div className="image-list-container">
             {Object.keys(imageList).map((key, index) => {
               const image = imageList[key];
@@ -65,14 +61,10 @@ const Detail = () => {
             Jugadores: {selectedGame.min_players} - {selectedGame.max_players}
           </p>
           <p>
-            Tiempo de juego: {selectedGame.min_playtime} -{" "}
-            {selectedGame.max_playtime} minutos
+            Tiempo de juego: {selectedGame.min_playtime} - {selectedGame.max_playtime} minutos
           </p>
           <p>Edad mínima: {selectedGame.min_age}+</p>
-          <button
-            onClick={handleWhatsAppClick}
-            className="detail-whatsapp-button"
-          >
+          <button onClick={handleWhatsAppClick} className="detail-whatsapp-button">
             Realizar pedido por WhatsApp
           </button>
         </div>
